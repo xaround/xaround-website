@@ -1,2 +1,2 @@
 # xaround-static-website
-A static website websit for xaround – Landing Page
+A static website for xaround (landing page)
