@@ -1,2 +1,2 @@
-# xaround-static-website
-A static website for xaround (landing page)
+# xaround-landing-page
+Landing page for https://xaroundapp.com
