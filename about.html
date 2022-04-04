@@ -7,19 +7,45 @@
   <link rel="icon" href="images/xaround-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- library for hamburger menu -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   <title>xaround – About</title>
 </head>
   <body>
 
+    <!--
+    deprecated
+
     <div class="top-nav">
       <a class="logo" href="https://xaroundapp.com">
-          <img src="images/xaround-text-logo.svg">
+          <img src="images/xaround-text-logo.svg" alt="xaround - text logo">
       </a>
       <a class="nav-button" class="active" href="https://xaroundapp.com">Home</a>
       <a class="nav-button" href="https://xaroundapp.com/about">About</a>
       <a class="nav-button" href="https://xaroundapp.com/terms-and-privacy">Terms & Privacy</a>
       <a class="nav-button" href="https://xaroundapp.com/community-guidelines">Community Guidelines</a>
+
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div> -->
+
+    <!-- Top Navigation Menu -->
+    <div class="topnav">
+      <a class="logo" href="https://xaroundapp.com">
+        <img src="images/xaround-text-logo.svg" alt="xaround - text logo">
+      </a>
+      <!-- Navigation links (hidden by default) -->
+      <div id="myLinks">
+        <a class="active" href="https://xaroundapp.com">Home</a>
+        <a href="https://xaroundapp.com/about">About</a>
+        <a href="https://xaroundapp.com/terms-and-privacy">Terms & Privacy</a>
+        <a href="https://xaroundapp.com/community-guidelines">Community Guidelines</a>
+      </div>
+      <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
     </div>
 
     <div class="about-container">
@@ -40,5 +66,15 @@
       </div>
     </div>
 
+    <script>
+    function myFunction() {
+      var x = document.getElementById("myLinks");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+    </script>
   </body>
 </html>

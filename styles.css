@@ -1,3 +1,76 @@
+/* Style the navigation menu */
+.topnav {
+  overflow: hidden;
+  background-color: #000;
+  position: relative;
+}
+
+.logo {
+  height: 20px;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+  display: none;
+}
+
+/* Style navigation menu links */
+.topnav a {
+  color: white;
+  background-color: rgb(14,14,16);
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.topnav a:hover {
+  text-decoration: none;
+  color: rgb(10,132,255);
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* OLD NAV BAR */
+
+/* .top-nav {
+  overflow: hidden;
+  width: 100%;
+  padding-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-button, .logo {
+  float: right;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 6px 30px;
+  text-decoration: none;
+  font-size: 1em;
+  font-weight: 600;
+}
+
+.logo {
+  padding-right: 180px;
+}
+
+.top-nav a:hover {
+  color: rgb(10,132,255);
+  text-decoration: none;
+}
+
+.top-nav .logo {
+  height: 20px;
+} */
+
 body {
   margin: 0;
   text-align: center;
@@ -20,7 +93,7 @@ h1 {
 p {
   color: rgb(142,142,147);
   text-align: left;
-  font-size: 1.4em;
+  font-size: 1.3em;
 }
 
 .feature-text, .feature-text-icon {
@@ -105,7 +178,7 @@ a:hover {
 .about-text {
   color: rgb(255,255,255);
   text-align: left;
-  font-size: 1.07em;
+  font-size: 1em;
   font-weight: 300;
   line-height: 1.47;
   padding-bottom: 40px;
@@ -138,40 +211,6 @@ a:hover {
   height: 60px;
 }
 
-/* NAV BAR */
-
-.top-nav {
-  overflow: hidden;
-  width: 100%;
-  padding-top: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.nav-button, .logo {
-  float: right;
-  color: rgb(255, 255, 255);
-  text-align: center;
-  padding: 6px 30px;
-  text-decoration: none;
-  font-size: 1em;
-  font-weight: 600;
-}
-
-.logo {
-  padding-right: 180px;
-}
-
-.top-nav a:hover {
-  color: rgb(10,132,255);
-  text-decoration: none;
-}
-
-.top-nav .logo {
-  height: 20px;
-}
-
 /* START media queries */
 
 @media (min-width: 977px) {
@@ -188,7 +227,7 @@ a:hover {
 
 @media (max-width: 976px) {
   .about-text {
-    font-size: 1em;
+    font-size: 0.96em;
   }
   .about {
     width: 86%;
@@ -241,7 +280,7 @@ a:hover {
   }
   p {
     text-align: center;
-    font-size: 1.24em;
+    font-size: 1.1em;
   }
 }
 
@@ -263,7 +302,7 @@ a:hover {
   }
   p {
     text-align: center;
-    font-size: 1em;
+    font-size: 0.94em;
   }
   .nav-button, .logo {
     float: center;
