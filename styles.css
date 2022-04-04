@@ -287,7 +287,7 @@ a:hover {
 /* Mobile - S */
 @media (max-width: 425px) {
   .feature-flex-icon {
-    padding-top: 10px;
+    padding-top: 50px;
     padding-bottom: 0px;
   }
   .feature-flex, .feature-flex-alt {
