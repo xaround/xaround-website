@@ -1,315 +1,311 @@
-/* Style the navigation menu */
-.topnav {
-  overflow: hidden;
-  background-color: #000;
-  position: relative;
+:root {
+  /* Color */
+
+  --clr-primary-100: #0e0e10;
+  --clr-primary-200: hsl(0, 0%, 0%);
+
+  --clr-neutral-100: hsl(0, 0%, 100%);
+  /* --clr-neutral-200: hsl(240, 2.3%, 56.7%); */
+  --clr-neutral-200: #cecece;
+
+  --clr-hvr-100: hsl(210, 100%, 52%);
+
+  /* Font family  */
+  --ff-primary: "Inter", sans-serif;
+
+  --ff-body: var(--ff-primary);
+  --ff-heading: var(--fs-primary);
+
+  /* Font weight  */
+  --fw-regular: 300;
+  --fw-semi-bold: 600;
+  --fw-bold: 700;
+
+  /* Font size  */
+  --fs-50: 1rem;
+  --fs-70: 1.0625rem;
+  --fs-100: 1.3rem;
+  --fs-200: 2rem;
+  --fs-300: 2.6rem;
+  --fs-400: 3.5rem;
+
+  --fs-body: var(--fs-100);
+  --fs-primary-heading: var(--fs-400);
+  --fs-nav: var(--fs-70);
+
+  /* Padding block  */
+  --vertical-padding-50: 0.55rem;
+  --vertical-padding-80: 0.605rem;
+  --vertical-padding-100: 1.5rem;
+  --vertical-padding-300: 4.5rem;
+  --vertical-padding-700: 8.5rem;
+  --vertical-padding-900: 4rem;
 }
 
-.logo {
-  height: 20px;
+/* https://piccalil.li/blog/a-modern-css-reset */
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
-/* Hide the links inside the navigation menu (except for logo/home) */
-.topnav #myLinks {
-  display: none;
-}
-
-/* Style navigation menu links */
-.topnav a {
-  color: white;
-  background-color: rgb(14,14,16);
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-  display: block;
-}
-
-.topnav a:hover {
-  text-decoration: none;
-  color: rgb(10,132,255);
-}
-
-/* Style the hamburger menu */
-.topnav a.icon {
-  display: block;
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-
-/* OLD NAV BAR */
-
-/* .top-nav {
-  overflow: hidden;
-  width: 100%;
-  padding-top: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.nav-button, .logo {
-  float: right;
-  color: rgb(255, 255, 255);
-  text-align: center;
-  padding: 6px 30px;
-  text-decoration: none;
-  font-size: 1em;
-  font-weight: 600;
-}
-
-.logo {
-  padding-right: 180px;
-}
-
-.top-nav a:hover {
-  color: rgb(10,132,255);
-  text-decoration: none;
-}
-
-.top-nav .logo {
-  height: 20px;
-} */
-
-body {
+/* Remove default margin */
+* {
   margin: 0;
-  text-align: center;
-  font-family: "Inter", sans-serif;
-  background-color: rgb(0,0,0);
+  padding: 0;
+  font: inherit;
 }
 
-img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  transition: background 0.6s linear;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: inline;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
+
+/* General styling */
+body {
+  font-family: var(--ff-body);
+  font-size: var(--fs-body);
+  background-color: var(--clr-primary-100);
 }
 
 h1 {
-  color: rgb(255,255,255);
-  text-align: left;
-  margin: 0;
+  color: var(--clr-neutral-100);
+  font-size: 3.5rem;
+  background-size: 200%;
+  background-image: linear-gradient(120deg, #33c8f8, #5b33ed);
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 p {
-  color: rgb(142,142,147);
-  text-align: left;
-  font-size: 1.3em;
+  color: var(--clr-neutral-200);
 }
 
-.feature-text, .feature-text-icon {
-  width: 50%;
-  height: 600px;
+i {
+  cursor: pointer;
+}
+
+img {
+  /* width: 822px;
+  height: 433px; */
+  /* height: 822px;
+  width: 433px; */
+  width: 355px;
+}
+
+.img-vc {
+  height: 822px;
+  width: 433px;
+}
+
+strong {
+  color: var(--clr-neutral-100);
+  font-size: var(--fs-50);
+  font-weight: var(--fw-bold);
+}
+
+/* navigation */
+
+.primary-header {
+  padding: var(--vertical-padding-50) 0 var(--vertical-padding-50) 0;
+}
+
+.content-sidebar {
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+}
+
+.content-sidebar > .logo-header {
+  flex: 1 1 98%;
+  display: flex;
   justify-content: center;
 }
 
-.text {
-  height: 40%;
+.content-sidebar > .hamburger-header {
+  flex: 1 1 2%;
 }
 
-/* .feature AND .feature-alt */
-
-.feature, .feature-alt {
-  display: block;
+.hamburger-header i:hover {
+  color: var(--clr-hvr-100);
 }
 
-.feature {
-  background-color: rgb(0,0,0);
-  border: 0px solid rgb(0,0,0);
+.nav-wrapper {
+  align-items: center;
 }
-
-.feature-alt {
-  background-color: rgb(14,14,16);
-  border: 0px solid rgb(14,14,16);
-}
-
-/* .feature-flex AND .feature-flex-alt */
-
-.feature-flex, .feature-flex-alt, .feature-flex-icon {
-  height: 600px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-}
-
-.feature-flex, .feature-flex-icon {
-  background-color: rgb(0,0,0);
-}
-
-.feature-flex-alt {
-  background-color: rgb(14,14,16);
-}
-
-/* ABOUT, TERMS & PRIVACY, AND COMMUNITY GUIDELINES */
-
-.about-container {
-  display: block;
-  justify-content: center;
-}
-
-.about-header {
-  color: rgb(255,255,255);
-  margin: 0;
-  text-align: left;
-  font-size: 2.6em;
-  line-height: 1.47;
-  font-weight: 600;
-}
-
-.about {
-  width: 875px;
-  height: auto;
-  margin: 0 auto;
-  padding-top: 70px;
-}
-
-a {
-    color: rgb(10,132,255);
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-.about-text {
-  color: rgb(255,255,255);
-  text-align: left;
-  font-size: 1em;
-  font-weight: 300;
-  line-height: 1.47;
-  padding-bottom: 40px;
-}
-
-/* ICON */
-
-.feature-image, .feature-image-icon {
-  width: 350px;
+.nav-wrapper img {
+  height: 1.25rem;
+  flex-grow: 0;
   margin: auto;
+}
+.nav-wrapper i {
+  color: var(--clr-neutral-100);
+}
+
+/* Utility classes */
+
+.container {
+  --max-width: 1100px;
+  --padding: 1rem;
+
+  width: min(var(--max-width), 100% - (var(--padding) * 2));
+  margin-inline: auto;
+}
+
+:where(.flow :not(:first-child)) {
+  margin-top: var(--flow-spacer, 0.8em);
+}
+:where(.flow :last-child) {
+  margin-bottom: var(--flow-spacer, 0.8em);
+}
+.flow button {
+  width: 100%;
+}
+
+.even-columns {
   display: flex;
-  justify-content: center;
+  gap: 5rem;
   align-items: center;
 }
-
-.text-icon, .feature-text-icon {
-  height: auto;
+.even-columns img {
+  margin-right: 50px;
 }
 
-.app-store {
-  display: flex;
-  justify-content: center;
+.even-columns[data-type="inverted"] {
+  flex-direction: row-reverse;
+}
+
+.vertical-align-center {
   align-items: center;
-  padding-top: 10px;
+}
+.justify-self-end {
+  justify-self: end;
 }
 
-.app-store-button {
-  background-color: rgb(0,0,0);
-  border: 0;
-  height: 60px;
-}
-
-/* START media queries */
-
-@media (min-width: 977px) {
-  .feature-flex, .feature-flex-alt {
-    width: 952px;
-    padding-top: 80px;
-    padding-bottom: 120px;
-  }
-  .feature-flex-icon {
-    width: 952px;
-    padding-top: 30px;
+@media (min-width: 50em) {
+  .even-columns {
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
   }
 }
-
-@media (max-width: 976px) {
-  .about-text {
-    font-size: 0.96em;
-  }
-  .about {
-    width: 86%;
-    padding-top: 30px;
-  }
-  .feature-flex, .feature-flex-alt, .feature-flex-icon {
-    width: 92%;
+@media (max-width: 62em) {
+  .even-columns {
     display: block;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top: 50px;
-    padding-bottom: 50px;
-  }
-  .feature-text, .feature-text-icon {
-    order: 1;
-    width: auto;
-    height: auto;
-  }
-  .text {
-    height: auto;
-  }
-  .feature-text-icon {
-    padding-top: 30px;
-    padding-bottom: 50px;
-  }
-  .feature-image {
-    order: 2;
-    width: 250px;
-    padding-top: 15px;
-  }
-  .feature-image-icon {
-    width: 250px;
-    height: auto;
-  }
-  .top-nav .logo {
-    display: none;
-  }
-  .top-nav {
-    padding-bottom: 40px;
-  }
-  .top-nav .nav-button {
-    float: right;
-    justify-content: space-around;
-  }
-  h1 {
     text-align: center;
   }
-  p {
-    text-align: center;
-    font-size: 1.1em;
+  .even-columns img {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
-/* Mobile - S */
-@media (max-width: 425px) {
-  .feature-flex-icon {
-    padding-top: 50px;
-    padding-bottom: 0px;
-  }
-  .feature-flex, .feature-flex-alt {
-    padding-top: 50px;
-    padding-bottom: 40px;
-  }
-  .feature-text-icon, .feature-text {
-    font-size: 0.7em;
-  }
-  .feature-image, .feature-image-icon {
-    width: 200px;
-  }
-  p {
-    text-align: center;
-    font-size: 0.94em;
-  }
-  .nav-button, .logo {
-    float: center;
-    text-align: center;
-    padding: 6px 20px;
-    font-size: 0.6em;
-  }
+.clr-bg-dark {
+  background-color: var(--clr-primary-200);
+}
+.clr-bg-semi-dark {
+  background-color: var(--clr-primary-100);
+}
+.clr-hvr-100 {
+  color: var(--clr-hvr-100);
 }
 
-/* END media queries */
+.text-primary-dark {
+  color: var(--clr-primary-200);
+}
+.text-primary-semi-dark {
+  color: var(--clr-primary-100);
+}
+.text-neutral-white {
+  color: var(--clr-neutral-100);
+}
+.text-neutral-grey {
+  color: var(--clr-neutral-200);
+}
+
+.fw-regular {
+  font-weight: var(--fw-regular);
+}
+.fw-bold {
+  font-weight: var(--fw-bold);
+}
+
+.fs-primary-heading {
+  font-size: var(--fs-primary-heading);
+}
+.fs-secondary-heading {
+  font-size: var(--fs-secondary-heading);
+}
+
+.vertical-padding-block-300 {
+  padding-block: var(--vertical-padding-300);
+}
+.vertical-padding-block-700 {
+  padding-block: var(--vertical-padding-700);
+}
+.vertical-padding-block-900 {
+  padding-block: var(--vertical-padding-900);
+}
+
+.setting {
+  font-size: var(--fs-50);
+  font-weight: 300px;
+}
+
+.nav-list {
+  text-align: center;
+}
+.nav-list li {
+  list-style: none;
+  padding: var(--vertical-padding-80) 0 var(--vertical-padding-80) 0;
+}
+
+.nav-list a {
+  font-size: var(--fs-nav);
+  color: var(--clr-neutral-200);
+  text-decoration: none;
+  text-align: center;
+}
+.nav-list a:hover {
+  color: var(--clr-hvr-100);
+}
+
+#myDIV {
+  display: none;
+}
