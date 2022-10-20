@@ -1,184 +1,191 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="styles.css" />
-    <link rel="icon" href="images/xaround-icon.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- library for hamburger menu -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/xaround-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <title>xaround – Connecting you with others on campus</title>
   </head>
   <body>
-    
-    <!--
-    deprecated
-
-    <div class="top-nav">
-      <a class="logo" href="https://xaroundapp.com">
-          <img src="images/xaround-text-logo.svg" alt="xaround - text logo">
-      </a>
-      <a class="nav-button" class="active" href="https://xaroundapp.com">Home</a>
-      <a class="nav-button" href="https://xaroundapp.com/about">About</a>
-      <a class="nav-button" href="https://xaroundapp.com/terms-and-privacy">Terms & Privacy</a>
-      <a class="nav-button" href="https://xaroundapp.com/community-guidelines">Community Guidelines</a>
-
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        <i class="fa fa-bars"></i>
-      </a>
-    </div> -->
-
-    <!-- Top Navigation Menu -->
-    <div class="topnav">
-      <a class="logo" href="https://xaroundapp.com">
-        <img src="images/xaround-text-logo.svg" alt="xaround - text logo">
-      </a>
-      <!-- Navigation links (hidden by default) -->
-      <div id="myLinks">
-        <a class="active" href="https://xaroundapp.com">Home</a>
-        <a href="https://xaroundapp.com/about">About</a>
-        <a href="https://xaroundapp.com/terms-and-privacy">Terms & Privacy</a>
-        <a href="https://xaroundapp.com/community-guidelines">Community Guidelines</a>
-      </div>
-      <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        <i class="fa fa-bars"></i>
-      </a>
-    </div>
-
-    <div class="feature">
-      <div class="feature-flex-icon">
-        <div class="feature-image-icon">
-          <img src="images/xaround-app-icon.png" alt="xaround - app icon"/>
+    <header class="primary-header clr-bg-semi-dark">
+      <div class="nav-wrapper content-sidebar">
+        <div class="logo-header">
+          <a href="index.html"
+            ><img
+              src="images/xaround-text-logo.svg"
+              alt="xaround - text logo header"
+          /></a>
         </div>
-        <div class="feature-text-icon">
-          <div>
-            <h1>Bringing everybody in your campus together</h1>
-          </div>
-          <div class="text-icon">
-            <p>Experience a new way to interact with others on your campus. Join
-              the community right now to discover what’s happening. Some say it
-              holds many secrets…</p>
-          </div>
-          <div class="app-store">
-            <button class="app-store-button">
-              <a href="https://apps.apple.com/my/app/xaround/id1516194727">
-                <img src="images/apple-app-store.svg" alt="Apple store store logo"/>
-              </a>
-            </button>
-          </div>
+        <div class="hamburger-header" onclick="myFunction()">
+          <i class="fa fa-bars" style="font-size: 1.06rem"></i>
         </div>
       </div>
-    </div>
+      <nav>
+        <div id="myDIV">
+          <ul class="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="terms-and-privacy.html">Terms & Privacy</a></li>
+            <li>
+              <a href="community-guidelines.html">Community Guidelines</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
 
-    <div class="feature-alt">
-      <div class="feature-flex-alt">
-        <div class="feature-text">
-          <div>
-            <h1>Publish Anonymously</h1>
-          </div>
-          <div class="text">
-            <p>Empowering you with anonymity. Choose whether you’d like to post
-              or comment as yourself or anonymously. We’ve built the content
-              moderation system that can fulfil this need, while still
-              ensuring your privacy.</p>
+    <main>
+      <section class="vertical-padding-block-700 section" data-bg="black">
+        <div class="container">
+          <div class="even-columns">
+            <img src="images/xaround-app-icon.png" alt="xaround - app icon" />
+            <div class="flow">
+              <h1 class="fs-primary-heading fw-bold">
+                Bringing everybody in your campus together
+              </h1>
+              <p>
+                Experience a new way to socialize on your campus. Join the
+                community right now to discover what’s happening. Some say it
+                holds many secrets…
+              </p>
+              <button style="--flow-spacer: 1.5em">
+                <a
+                  href="https://apps.apple.com/my/app/xaround/id1516194727"
+                  target="_blank"
+                  ><img
+                    src="images/apple-app-store.svg"
+                    alt="Apple store store logo"
+                    style="height: 58px; width: 173px; margin: auto"
+                /></a>
+              </button>
+            </div>
           </div>
         </div>
-        <div class="feature-image">
-          <img src="images/ios-homeVC.png" alt="xaround - home view controller screenshot"/>
+      </section>
+
+      <section class="vertical-padding-block-900 section" data-bg="black">
+        <div class="container">
+          <div class="even-columns">
+            <div class="flow">
+              <h1 class="fs-primary-heading fw-bold">Publish Anonymously</h1>
+              <p>
+                Empowering you with anonymity. Choose whether you’d like to post
+                or comment as yourself or anonymously. We’ve built the content
+                moderation system that can fulfil this need, while still
+                ensuring your privacy.
+              </p>
+            </div>
+            <img
+              src="images/ios-homeVC.png"
+              alt="xaround - home view controller screenshot"
+              class="img-vc"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="vertical-padding-block-900 section" data-bg="#0e0e10">
+        <div class="container">
+          <div class="even-columns" data-type="inverted">
+            <div class="flow">
+              <h1 class="fs-primary-heading fw-bold">Explore Campus Feeds</h1>
+              <p>
+                Etiam ante nibh, maximus eget massa eu, faucibus vestibulum
+                odio. Mauris sapien urna, congue at nulla id, auctor tincidunt
+                sapien. Nunc eu ligula sit amet eros hendrerit cursus id quis
+                enim. Sed blandit et nulla ac rutrum. Donec id nulla vel sem
+                fringilla aliquet lacinia eu purus.
+              </p>
+            </div>
+            <img
+              src="images/ios-communitiesVC.png"
+              alt="xaround - home view controller screenshot"
+              class="img-vc"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="vertical-padding-block-900 section" data-bg="#0e0e10">
+        <div class="container">
+          <div class="even-columns">
+            <div class="flow">
+              <h1 class="fs-primary-heading fw-bold">
+                Fascinating Discussions
+              </h1>
+              <p>
+                Vivamus risus ante, vulputate vitae ornare ut, ultrices sit amet
+                tortor. Maecenas vel quam varius, cursus tellus quis, sodales
+                tellus. Duis pharetra, neque eu feugiat porta, odio arcu euismod
+                urna, ut vulputate enim dolor ut elit. Aenean quis tempor ante.
+              </p>
+            </div>
+            <img
+              src="images/post-thread.png"
+              alt="xaround - home view controller screenshot"
+              class="img-vc"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="vertical-padding-block-900 section" data-bg="black">
+        <div class="container">
+          <div class="even-columns" data-type="inverted">
+            <div class="flow">
+              <h1 class="fs-primary-heading fw-bold">Share with Others</h1>
+              <p>
+                Fusce ornare quam id mauris fringilla, vestibulum posuere quam
+                dignissim. Aenean sodales lorem orci. Proin mollis, tortor non
+                facilisis dignissim, eros turpis imperdiet diam, quis eleifend
+                urna erat eu nulla. Ut euismod euismod ante ac accumsan. Proin
+                hendrerit quis mauris a vulputate.
+              </p>
+            </div>
+            <img
+              src="images/share.png"
+              alt="xaround - home view controller screenshot"
+              class="img-vc"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="vertical-padding-block-900 section" data-bg="black">
+        <div class="container">
+          <div class="even-columns">
+            <div class="flow">
+              <h1 class="fs-primary-heading fw-bold">Beautiful iOS Design</h1>
+              <p>
+                Aliquam molestie eu magna at sollicitudin. Curabitur vitae leo
+                et tellus placerat maximus quis id quam. Curabitur tincidunt
+                risus a ante eleifend, ac suscipit enim tempor. Praesent lacus
+                orci, volutpat nec tortor vel, dignissim accumsan lorem.
+              </p>
+            </div>
+            <img
+              src="images/ios-profileVC.png"
+              alt="xaround - home view controller screenshot"
+              class="img-vc"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- <footer class="vertical-padding-block-700 clr-bg-semi-dark">
+      <div class="container">
+        <div class="even-columns">
         </div>
       </div>
-    </div>
-
-    <div class="feature">
-      <div class="feature-flex">
-        <div class="feature-image">
-          <img src="images/ios-communitiesVC.png" alt="xaround - communities view controller screenshot"/>
-        </div>
-        <div class="feature-text">
-          <div>
-            <h1>Explore Campus Feeds</h1>
-          </div>
-          <div class="text">
-            <p>Etiam ante nibh, maximus eget massa eu, faucibus vestibulum odio.
-              Mauris sapien urna, congue at nulla id, auctor tincidunt sapien.
-              Nunc eu ligula sit amet eros hendrerit cursus id quis enim. Sed
-              blandit et nulla ac rutrum. Donec id nulla vel sem fringilla
-              aliquet lacinia eu purus</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="feature-alt">
-      <div class="feature-flex-alt">
-        <div class="feature-text">
-          <div>
-            <h1>Fascinating Discussions</h1>
-          </div>
-          <div class="text">
-            <p>Vivamus risus ante, vulputate vitae ornare ut, ultrices sit amet
-              tortor. Maecenas vel quam varius, cursus tellus quis, sodales tellus.
-              Duis pharetra, neque eu feugiat porta, odio arcu euismod urna, ut
-              vulputate enim dolor ut elit. Aenean quis tempor ante.</p>
-          </div>
-        </div>
-        <div class="feature-image">
-          <img src="images/post-thread.png" alt="xaround - post thread view controller screenshot"/>
-        </div>
-      </div>
-    </div>
-
-    <div class="feature">
-      <div class="feature-flex">
-        <div class="feature-image">
-          <img src="images/share.png" alt="xaround - share view controller screenshot"/>
-        </div>
-        <div class="feature-text">
-          <div>
-            <h1>Share with Others</h1>
-          </div>
-          <div class="text">
-            <p>Fusce ornare quam id mauris fringilla, vestibulum posuere quam
-              dignissim. Aenean sodales lorem orci. Proin mollis, tortor non
-              facilisis dignissim, eros turpis imperdiet diam, quis eleifend urna
-              erat eu nulla. Ut euismod euismod ante ac accumsan. Proin hendrerit
-              quis mauris a vulputate.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="feature-alt">
-      <div class="feature-flex-alt">
-        <div class="feature-text">
-          <div>
-            <h1>Beautiful iOS Design</h1>
-          </div>
-          <div class="text">
-            <p>Aliquam molestie eu magna at sollicitudin. Curabitur vitae leo et
-              tellus placerat maximus quis id quam. Curabitur tincidunt risus a
-              ante eleifend, ac suscipit enim tempor. Praesent lacus orci,
-              volutpat nec tortor vel, dignissim accumsan lorem.</p>
-          </div>
-        </div>
-        <div class="feature-image">
-          <img src="images/ios-profileVC.png" alt="xaround - profile view controller screenshot"/>
-        </div>
-      </div>
-    </div>
-
-    <script>
-    function myFunction() {
-      var x = document.getElementById("myLinks");
-      if (x.style.display === "block") {
-        x.style.display = "none";
-      } else {
-        x.style.display = "block";
-      }
-    }
-    </script>
+    </footer> -->
+    <script type="text/javascript" src="main.js"></script>
   </body>
 </html>
