@@ -1,80 +1,104 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="icon" href="images/xaround-icon.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- library for hamburger menu -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <title>xaround – About</title>
-</head>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="images/xaround-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- library for hamburger menu -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>xaround – Community Guidelines</title>
+  </head>
   <body>
-
-    <!--
-    deprecated
-
-    <div class="top-nav">
-      <a class="logo" href="https://xaroundapp.com">
-          <img src="images/xaround-text-logo.svg" alt="xaround - text logo">
-      </a>
-      <a class="nav-button" class="active" href="https://xaroundapp.com">Home</a>
-      <a class="nav-button" href="https://xaroundapp.com/about">About</a>
-      <a class="nav-button" href="https://xaroundapp.com/terms-and-privacy">Terms & Privacy</a>
-      <a class="nav-button" href="https://xaroundapp.com/community-guidelines">Community Guidelines</a>
-
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        <i class="fa fa-bars"></i>
-      </a>
-    </div> -->
-
-    <!-- Top Navigation Menu -->
-    <div class="topnav">
-      <a class="logo" href="https://xaroundapp.com">
-        <img src="images/xaround-text-logo.svg" alt="xaround - text logo">
-      </a>
-      <!-- Navigation links (hidden by default) -->
-      <div id="myLinks">
-        <a class="active" href="https://xaroundapp.com">Home</a>
-        <a href="https://xaroundapp.com/about">About</a>
-        <a href="https://xaroundapp.com/terms-and-privacy">Terms & Privacy</a>
-        <a href="https://xaroundapp.com/community-guidelines">Community Guidelines</a>
-      </div>
-      <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        <i class="fa fa-bars"></i>
-      </a>
-    </div>
-
-    <div class="about-container">
-      <div class="about">
-        <div>
-          <h2 class="about-header">About</h2>
-          <hr style="height: 1px; border-width: 0; color: rgb(99, 99, 102); background-color: rgb(99, 99, 102)"/>
+    <header class="primary-header clr-bg-semi-dark">
+      <div class="nav-wrapper content-sidebar">
+        <div class="logo-header">
+          <a href="index.html"
+            ><img
+              src="images/xaround-text-logo.svg"
+              alt="xaround - text logo header"
+          /></a>
         </div>
-        <div>
-          <p class="about-text">
-            Campus confessions are typically hosted through <a href="https://www.facebook.com/business/help/461775097570076?id=939256796236247" target="_blank">Facebook Pages</a>. Fellow students create a page for their campus as a medium to connect students on their campus. Students use these pages to anonymously share their opinions, secrets, relevant news, and many more with others on their campus. However, since Facebook Pages is not meant for hosting confession platforms, the page administrators and its followers both face their own unique problems.
-            <br/><br/>
-            Page administrators’ problems include: (1) risk of accidental reposting of unlawful content, (2) page taken down by the Facebook staff for violating <a href="https://transparency.fb.com/policies/community-standards/" target="_blank">Facebook’s Community Standards</a>, and (3) continuously reposting content submissions. Meanwhile, the page followers' problems include: (1) wait for the page administrators to repost their submission, (2) receive fewer responses from others due to privacy concerns in the comment section, and (3) publish new separate posts in order to respond to a specific post anonymously.
-            <br/><br/>
-            We propose a new platform for hosting campus communities through a mobile app for greater accessibility from anywhere. The main focus is overcoming the problems stated above, making more campuses available, and providing a superior user experience. Users may participate in the app development discussions through an exclusive forum in the app to help designing the ideal platform together. Unlike Facebook Pages, xaround is built to host campus communities optimally – more than just a confession platform.
-          </p>
+        <div class="hamburger-header" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
         </div>
       </div>
-    </div>
+      <nav class="primary-navigation" id="primary-navigation">
+        <ul role="list" class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="terms-and-privacy.html">Terms & Privacy</a></li>
+          <li><a href="community-guidelines.html">Community Guidelines</a></li>
+        </ul>
+      </nav>
+    </header>
 
-    <script>
-    function myFunction() {
-      var x = document.getElementById("myLinks");
-      if (x.style.display === "block") {
-        x.style.display = "none";
-      } else {
-        x.style.display = "block";
-      }
-    }
-    </script>
+    <main>
+      <section class="vertical-padding-block-300 clr-bg-dark">
+        <div class="container max-width">
+          <div>
+            <div>
+              <h2 class="fs-secondary-heading fw-semi-bold">About</h2>
+              <hr class="setting-line" />
+            </div>
+            <br />
+            <p class="fs-body-setting text-neutral-200">
+              Campus confessions are typically hosted through
+              <a
+                href="https://www.facebook.com/business/help/461775097570076?id=939256796236247"
+                target="_blank"
+                >Facebook Pages</a
+              >. Fellow students create a page for their campus as a medium to
+              connect students on their campus. Students use these pages to
+              anonymously share their opinions, secrets, relevant news, and many
+              more with others on their campus. However, since Facebook Pages is
+              not meant for hosting confession platforms, the page
+              administrators and its followers both face their own unique
+              problems.
+            </p>
+          </div>
+          <br />
+          <div class="flow-last-child">
+            <p class="fs-body-setting text-neutral-200">
+              Page administrators’ problems include: (1) risk of accidental
+              reposting of unlawful content, (2) page taken down by the Facebook
+              staff for violating
+              <a
+                href="https://transparency.fb.com/en-gb/policies/community-standards/"
+                target="_blank"
+                >Facebook’s Community Standards</a
+              >, and (3) continuously reposting content submissions. Meanwhile,
+              the page followers' problems include: (1) wait for the page
+              administrators to repost their submission, (2) receive fewer
+              responses from others due to privacy concerns in the comment
+              section, and (3) publish new separate posts in order to respond to
+              a specific post anonymously.
+            </p>
+          </div>
+          <div class="flow-last-child">
+            <p class="fs-body-setting text-neutral-200">
+              We have zero tolerance for bullying or harassment of any kind.
+              Instead, we encourage constructive criticism. We acknowledge that
+              sometimes criticism with good intentions may be falsely
+              interpreted as bullying and harassment. Since it depends on the
+              context, our moderators will manually judge them. Don’t post or
+              comment with the intention of making someone feel bad. Don’t share
+              personal or contact information of other people without their
+              knowledge and consent.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script type="text/javascript" src="main.js"></script>
   </body>
 </html>
