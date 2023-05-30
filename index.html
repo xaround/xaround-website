@@ -3,31 +3,33 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="xaround - Connecting you with others on campus. Explore, discuss, and share ideas with your campus community.">
     <link rel="stylesheet" href="styles.css" />
     <link rel="icon" href="images/xaround-icon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <title>xaround – Connecting you with others on campus</title>
   </head>
   <body>
+    <!-- Primary Header -->
     <header class="primary-header clr-bg-semi-dark">
       <div class="nav-wrapper content-sidebar">
         <div class="logo-header">
-          <a href="index.html"
-            ><img
-              src="images/xaround-text-logo.svg"
-              alt="xaround - text logo header"
-          /></a>
+          <a href="index.html">
+            <!-- Use lazy loading for better performance -->
+            <img src="images/xaround-text-logo.svg" alt="xaround - text logo header" loading="lazy" />
+          </a>
         </div>
+        <!-- Hamburger Header for Menu -->
         <div class="hamburger-header" onclick="myFunction()">
+          <!-- Hamburger Icon -->
           <i class="fa fa-bars"></i>
         </div>
       </div>
+      <!-- Navigation Menu -->
       <nav class="primary-navigation" id="primary-navigation">
+        <!-- Navigation List -->
         <ul role="list" class="nav-list">
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
@@ -44,10 +46,9 @@
             <img
               class="img-icon"
               src="images/xaround-app-icon.png"
-              alt="xaround - app
-            icon"
+              alt="The xaround app icon"
             />
-            <div class="flow">
+            <article class="flow">
               <h1 class="fs-primary-heading fw-bold">
                 Connecting you with others on campus
               </h1>
@@ -60,13 +61,15 @@
                 <a
                   href="https://apps.apple.com/my/app/xaround/id1516194727"
                   target="_blank"
-                  ><img
+                >
+                  <img
                     src="images/apple-app-store.svg"
-                    alt="Apple store store logo"
+                    alt="Download xaround from the Apple App Store"
                     style="height: 58px; width: 173px; margin: auto"
-                /></a>
+                  />
+                </a>
               </button>
-            </div>
+            </article>
           </div>
         </div>
       </section>
@@ -175,12 +178,6 @@
       </section>
     </main>
 
-    <!-- <footer class="vertical-padding-block-700 clr-bg-semi-dark">
-      <div class="container">
-        <div class="even-columns">
-        </div>
-      </div>
-    </footer> -->
     <script type="text/javascript" src="main.js"></script>
   </body>
 </html>
