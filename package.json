@@ -1,0 +1,16 @@
+{
+  "name": "xaround-website",
+  "version": "1.0.0",
+  "description": "Landing page for https://xaroundapp.com",
+  "main": "main.js",
+  "scripts": {
+    "build": "npx tailwindcss -i ./src/styles.css -o ./output.css --minify",
+    "watch": "npx tailwindcss -i ./src/styles.css -o ./output.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "3.3.7"
+  }
+}
