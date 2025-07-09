@@ -4,8 +4,8 @@
   "description": "Landing page for https://xaroundapp.com",
   "main": "main.js",
   "scripts": {
-    "build": "npx tailwindcss -i ./src/styles.css -o ./output.css --minify",
-    "watch": "npx tailwindcss -i ./src/styles.css -o ./output.css --watch"
+    "build": "npx tailwindcss -i ./src/styles.css -o ./public/assets/css/output.css --minify",
+    "watch": "npx tailwindcss -i ./src/styles.css -o ./public/assets/css/output.css --watch"
   },
   "keywords": [],
   "author": "",

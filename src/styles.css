@@ -3,3 +3,82 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Dropdown Navigation Styles */
+.dropdown-parent:hover .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.dropdown-menu {
+  transform: translateY(-10px);
+}
+
+.dropdown-menu a {
+  white-space: nowrap;
+}
+
+.dropdown-parent:hover .dropdown-arrow {
+  transform: rotate(180deg);
+}
+
+/* Chat bubble arrow pointing up */
+.dropdown-menu::before {
+  content: '';
+  position: absolute;
+  top: -12px;
+  left: 20px;
+  width: 0;
+  height: 0;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-bottom: 12px solid rgb(28,28,28);
+}
+
+.dropdown-menu::after {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: 22px;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid black;
+}
+
+/* Mobile Dropdown Styles */
+.mobile-dropdown-menu.show {
+  display: block !important;
+}
+
+.mobile-dropdown-arrow.rotate {
+  transform: rotate(180deg);
+}
+
+/* Sidebar Dropdown Styles */
+.sidebar-dropdown-menu.show {
+  display: block !important;
+}
+
+.sidebar-dropdown-arrow.rotate {
+  transform: rotate(180deg);
+}
+
+/* Page Load Fade-in Animation */
+@keyframes pageLoadFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Initial hidden state - entire page content */
+#main-content {
+  opacity: 0;
+  animation: pageLoadFadeIn 0.25s ease-out forwards;
+  animation-delay: 0.1s;
+}

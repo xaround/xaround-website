@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir:*)",
+      "Bash(mv:*)",
+      "Bash(grep:*)",
+      "Bash(sed:*)",
+      "Bash(for file in community-guidelines.html terms-and-privacy.html)",
+      "Bash(do sed -i '' -e 's|href=\"\"output.css\"\"|href=\"\"../assets/css/output.css\"\"|g' -e 's|href=\"\"images/|href=\"\"../assets/images/|g' -e 's|src=\"\"images/|src=\"\"../assets/images/|g' -e 's|src=\"\"main.js\"\"|src=\"\"../assets/js/main.js\"\"|g' -e 's|href=\"\"index.html\"\"|href=\"\"../index.html\"\"|g' -e 's|href=\"\"about.html\"\"|href=\"\"about.html\"\"|g' -e 's|href=\"\"terms-and-privacy.html\"\"|href=\"\"terms-and-privacy.html\"\"|g' -e 's|href=\"\"community-guidelines.html\"\"|href=\"\"community-guidelines.html\"\"|g' \"$file\")",
+      "Bash(done)",
+      "Bash(do sed -i '' -e 's|src=\"\"../assets/images/\\(.*\\.svg\\)\"\"|src=\"\"../assets/images/icons/\\1\"\"|g' -e 's|src=\"\"../assets/images/xaround-\\(.*\\.png\\)\"\"|src=\"\"../assets/images/logos/xaround-\\1\"\"|g' \"$file\")",
+      "Bash(rm:*)",
+      "Bash(tree:*)",
+      "Bash(find:*)",
+      "Bash(cp:*)",
+      "Bash(npm run build:*)"
+    ],
+    "deny": []
+  }
+}

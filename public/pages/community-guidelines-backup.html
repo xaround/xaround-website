@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>xaround: Community Guidelines</title>
+  <link rel="stylesheet" href="../assets/css/output.css" /> <!-- Tailwind CSS -->
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon_io/favicon-16x16.png">
+  <link rel="manifest" href="../assets/images/favicon_io/site.webmanifest">
+</head>
+
+<body class="bg-black text-white font-inter transition-bg duration-500 ease-in-out">
+  <!-- Primary Header -->
+  <div class="fixed top-0 left-0 right-0 z-50">
+    <header class="fixed top-0 left-0 right-0 z-50 bg-black shadow-lg border-b-[1px] border-b-[rgb(24,24,24)]">
+      <nav class="container mx-auto max-w-6xl px-6 flex items-center justify-between h-[64px]">
+        <!-- Hamburger & Logo -->
+        <div class="flex items-center">
+          <button id="nav-toggle" class="order-1 md:hidden mr-4 p-2 focus:outline-none">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h8m-8 6h16" />
+            </svg>
+          </button>
+          <!-- logo: h‑5 on mobile, h‑6 on md+ -->
+          <a href="index.html" class="order-2 md:order-1 flex items-center">
+            <img src="assets/images/icons/xaround-text-logo.svg" alt="xaround" class="h-5 md:h-6" />
+          </a>
+        </div>
+        <!-- Desktop menu -->
+        <ul id="nav-menu" class="hidden md:flex text-sm font-medium text-white">
+          <li><a href="pages/index.html"
+              class="px-4 py-2 rounded-full transition-colors hover:bg-[rgb(28,28,28)] text-[rgb(160,160,160)] hover:text-white flex items-center">Home</a>
+          </li>
+          <li><a href="pages/about.html"
+              class="px-4 py-2 rounded-full transition-colors hover:bg-[rgb(28,28,28)] text-[rgb(160,160,160)] hover:text-white flex items-center">About</a>
+          </li>
+          <!-- Legal Dropdown -->
+          <li class="relative dropdown-parent">
+            <button
+              class="px-4 py-2 rounded-full transition-colors hover:bg-[rgb(28,28,28)] text-[rgb(160,160,160)] hover:text-white flex items-center space-x-1 dropdown-trigger">
+              <span>Legal</span>
+              <svg class="w-4 h-4 transition-transform dropdown-arrow" fill="none" stroke="currentColor"
+                viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </button>
+            <div
+              class="dropdown-menu absolute top-full left-0 mt-2 w-max bg-black border-2 border-[rgb(28,28,28)] rounded-lg shadow-lg opacity-0 invisible transition-all duration-200 z-50">
+              <a href="pages/privacy-policy.html"
+                class="flex items-center px-3 pb-2 pt-3 text-sm text-[rgb(160,160,160)] hover:text-white rounded-t-lg transition-colors group">
+                <div
+                  class="w-7 h-7 rounded bg-black border-2 border-[rgb(28,28,28)] group-hover:border group-hover:border-[rgb(210,210,210)] flex items-center justify-center mr-3 transition-colors">
+                  <img src="assets/images/icons/backhand.svg" alt=""
+                    class="h-4 w-4 opacity-60 group-hover:opacity-100" />
+                </div>
+                Privacy Policy
+              </a>
+              <a href="pages/user-agreement.html"
+                class="flex items-center px-3 pt-2 pb-3 text-sm text-[rgb(160,160,160)] hover:text-white rounded-b-lg transition-colors group">
+                <div
+                  class="w-7 h-7 rounded bg-black border-2 border-[rgb(28,28,28)] group-hover:border group-hover:border-[rgb(210,210,210)] flex items-center justify-center mr-3 transition-colors">
+                  <img src="assets/images/icons/info.svg" alt="" class="h-4 w-4 opacity-60 group-hover:opacity-100" />
+                </div>
+                User Agreement
+              </a>
+            </div>
+          </li>
+          <!-- Resources Dropdown -->
+          <li class="relative dropdown-parent">
+            <button
+              class="px-4 py-2 rounded-full transition-colors hover:bg-[rgb(28,28,28)] text-[rgb(160,160,160)] hover:text-white flex items-center space-x-1 dropdown-trigger">
+              <span>Resources</span>
+              <svg class="w-4 h-4 transition-transform dropdown-arrow" fill="none" stroke="currentColor"
+                viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </button>
+            <div
+              class="dropdown-menu absolute top-full left-0 mt-2 w-max bg-black border-2 border-[rgb(28,28,28)] rounded-lg shadow-lg opacity-0 invisible transition-all duration-200 z-50">
+              <a href="pages/community-guidelines.html"
+                class="flex items-center px-3 pb-2 pt-3 text-sm text-[rgb(160,160,160)] hover:text-white rounded-t-lg transition-colors group">
+                <div
+                  class="w-7 h-7 rounded bg-black border-2 border-[rgb(28,28,28)] group-hover:border group-hover:border-[rgb(210,210,210)] flex items-center justify-center mr-3 transition-colors">
+                  <img src="assets/images/icons/article.svg" alt=""
+                    class="h-4 w-4 opacity-60 group-hover:opacity-100" />
+                </div>
+                Community Guidelines
+              </a>
+              <a href="pages/faqs.html"
+                class="flex items-center px-3 pt-2 pb-3 text-sm text-[rgb(160,160,160)] hover:text-white rounded-b-lg transition-colors group">
+                <div
+                  class="w-7 h-7 rounded bg-black border-2 border-[rgb(28,28,28)] group-hover:border group-hover:border-[rgb(210,210,210)] flex items-center justify-center mr-3 transition-colors">
+                  <img src="assets/images/icons/info.svg" alt="" class="h-4 w-4 opacity-60 group-hover:opacity-100" />
+                </div>
+                Frequently Asked Questions
+              </a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <!-- Mobile menu (hidden by default, toggle with JS) -->
+      <ul id="mobile-menu" class="hidden md:hidden flex-col space-y-4 p-4 bg-gray-900 text-white">
+        <li><a href="pages/index.html" class="hover:text-gray-300 block">Home</a></li>
+        <li><a href="pages/about.html" class="hover:text-gray-300 block">About</a></li>
+        <!-- Legal Section -->
+        <li class="mobile-dropdown">
+          <button
+            class="mobile-dropdown-trigger hover:text-gray-300 block w-full text-left flex items-center justify-between">
+            <span class="flex items-center">
+              <img src="assets/images/icons/backhand.svg" alt="" class="h-4 w-4 mr-3" />
+              Legal
+            </span>
+            <svg class="w-4 h-4 transition-transform mobile-dropdown-arrow" fill="none" stroke="currentColor"
+              viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+              </path>
+            </svg>
+          </button>
+          <ul class="mobile-dropdown-menu mt-2 ml-7 space-y-2 hidden">
+            <li><a href="pages/privacy-policy.html" class="hover:text-gray-300 block text-sm flex items-center">
+                <img src="assets/images/icons/backhand.svg" alt="" class="h-3 w-3 mr-2" />
+                Privacy Policy
+              </a></li>
+            <li><a href="pages/user-agreement.html" class="hover:text-gray-300 block text-sm flex items-center">
+                <img src="assets/images/icons/info.svg" alt="" class="h-3 w-3 mr-2" />
+                User Agreement
+              </a></li>
+          </ul>
+        </li>
+        <!-- Resources Section -->
+        <li class="mobile-dropdown">
+          <button
+            class="mobile-dropdown-trigger hover:text-gray-300 block w-full text-left flex items-center justify-between">
+            <span class="flex items-center">
+              <img src="assets/images/icons/article.svg" alt="" class="h-4 w-4 mr-3" />
+              Resources
+            </span>
+            <svg class="w-4 h-4 transition-transform mobile-dropdown-arrow" fill="none" stroke="currentColor"
+              viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+              </path>
+            </svg>
+          </button>
+          <ul class="mobile-dropdown-menu mt-2 ml-7 space-y-2 hidden">
+            <li><a href="pages/community-guidelines.html" class="hover:text-gray-300 block text-sm flex items-center">
+                <img src="assets/images/icons/article.svg" alt="" class="h-3 w-3 mr-2" />
+                Community Guidelines
+              </a></li>
+            <li><a href="pages/questions-and-answers.html" class="hover:text-gray-300 block text-sm flex items-center">
+                <img src="assets/images/icons/info.svg" alt="" class="h-3 w-3 mr-2" />
+                Q&A
+              </a></li>
+          </ul>
+        </li>
+      </ul>
+    </header>
+  </div>
+  <!-- Overlay -->
+  </div id="overlay"
+    class="fixed inset-0 bg-black bg-opacity-50 backdrop-blur-sm transition-opacity duration-300 ease-in-out opacity-0 pointer-events-none z-30">
+  </div>
+  <!-- CONTENT WRAPPER -->
+  <!-- MAIN CONTENT -->
+  <div id="main-content" class="mt-[64px]">
+    <main class="pt-16 pb-8 shadow-lg border-b-[1px] border-b-[rgb(18,18,20)]">
+      <div class="container mx-auto max-w-6xl px-6">
+        <h2 class="text-4xl font-semibold mb-4 text-white">Community Guidelines</h2>
+        <p class="leading-relaxed text-md text-[rgb(210,210,220)] italic">Last updated: July 8, 2025</p>
+        <hr class="border-[rgb(46,46,56)] mb-8 mt-8" />
+        <!-- Guidelines Content -->
+        <p class="mb-6 leading-relaxed text-md text-[rgb(210,210,220)]">
+          At xaround, we truly strive to contribute to human progress by empowering people to express themselves and
+          share genuine insights
+          while having fun together, as a community. We created these Community Guidelines to support our mission by
+          encouraging the broadest
+          range of self-expression while also at the same time, making sure everyone can use our service safely every
+          day. These Guidelines
+          apply to all content on the app. In certain cases, we won’t take action against content when it is newsworthy
+          and relates to a matter
+          of political, social, or other general concern to our community.
+        </p>
+        <section class="mb-6">
+          <strong>Harassment & Bullying</strong>
+          <p class="leading-relaxed text-md text-[rgb(210,210,220)]">
+            We have zero tolerance for bullying or harassment of any kind. Instead, we encourage constructive criticism.
+            We acknowledge that
+            sometimes criticism with good intentions may be falsely interpreted as bullying and harassment. Since it
+            depends on the context,
+            our moderators will manually judge them. Don’t post or comment with the intention of making someone feel
+            bad. Don’t share personal
+            or contact information of other people without their knowledge and consent.
+          </p>
+        </section>
+        <section class="mb-6">
+          <strong>Threats, Violence & Harm</strong>
+          <p class="leading-relaxed text-md text-[rgb(210,210,220)]">
+            Don’t threaten to harm a person, a group of people, or someone’s property. Encouraging violence is
+            prohibited on xaround. Don't
+            submit posts or comments of gratuitous violence, including animal abuse. We don’t allow the glorification of
+            self-harm, including
+            the promotion of self-injury or eating disorders.
+          </p>
+        </section>
+        <section class="mb-6">
+          <strong>Impersonation & Spam</strong>
+          <p class="leading-relaxed text-md text-[rgb(210,210,220)]">
+            Don’t pretend to be someone you’re not — this includes your friends, celebrities, brands, or other
+            organizations — or attempt to
+            deceive people about who you are. We prohibit spam and deceptive practices, including content that imitates
+            xaround's advertisement
+            formats.
+          </p>
+        </section>
+        <section class="mb-6">
+          <strong>Hate Speech & False Information</strong>
+          <p class="leading-relaxed text-md text-[rgb(210,210,220)]">
+            Don't post any content that demeans, defames, or promotes discrimination or violence on the basis of race,
+            ethnicity, national origin,
+            religion, sexual orientation, gender identity, disability, or veteran status. We prohibit malicious
+            deception and deliberately spreading
+            false information that causes harm, such as denying the existence of tragic events.
+          </p>
+        </section>
+        <section class="mb-6">
+          <strong>Illegal Content</strong>
+          <p class="leading-relaxed text-md text-[rgb(210,210,220)]">
+            Don’t use xaround for any illegal activities — including to buy or sell illegal drugs, contraband,
+            counterfeit goods, or illegal weapons.
+          </p>
+        </section>
+        <section class="mb-6">
+          <strong>Terrorism</strong>
+          <p class="leading-relaxed text-md text-[rgb(210,210,220)]">
+            Terrorist organizations are prohibited from using our platform and we have no tolerance for content that
+            advocates or advances terrorism.
+          </p>
+        </section>
+        <section class="mb-6">
+          <p class="leading-relaxed text-md text-[rgb(210,210,220)]">
+            Please remember that you can always file a report using our in-app reporting feature. We review these
+            reports to determine whether there is
+            a violation of these Guidelines and any action needs to be taken. If you violate these Community Guidelines,
+            we may remove the offending content,
+            mute your account, and/or notify law enforcement. If your account is muted for violating our Terms of
+            Service or these Guidelines, you may still
+            use the app but your account can no longer create a post or comment. Please take these Guidelines seriously
+            and honor them in the spirit in which
+            they are intended. We’ll do our best to enforce them consistently and fairly, and ultimately we’ll try to do
+            what we think best reflects these values
+            in each situation in our sole discretion.
+          </p>
+          <br /><br />
+          If you have any questions, email me at
+          <a href="mailto:nikfikrics@gmail.com" class="text-[rgb(10,132,255)]">nikfikrics@gmail.com</a>.
+        </section>
+      </div>
+    </main>
+    <footer class="pt-8 pb-8">
+      <div class="container mx-auto max-w-6xl px-6 text-gray-400">
+        © 2025 Zyepher Technology (JR0158261-K). All rights reserved.
+      </div>
+    </footer>
+  </div>
+  <script src="../assets/js/main.js"></script>
+</body>
+
+</html>
