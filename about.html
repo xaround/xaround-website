@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>xaround: About</title>
+    <link rel="stylesheet" href="assets/css/output.css" /> <!-- Tailwind CSS -->
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="assets/images/favicon_io/site.webmanifest">
+</head>
+
+<body class="bg-black text-white font-inter transition-bg duration-500 ease-in-out">
+    <!-- Primary Header -->
+    <div class="fixed top-0 left-0 right-0 z-50">
+        <header class="fixed top-0 left-0 right-0 z-50 bg-black shadow-lg border-b-[1px] border-b-[rgb(28,28,28)]">
+            <nav class="container mx-auto max-w-6xl px-6 flex items-center justify-between h-[64px]">
+                <!-- Hamburger & Logo -->
+                <div class="flex items-center">
+                    <button id="nav-toggle" class="order-1 md:hidden mr-4 p-2 focus:outline-none">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </button>
+                    <!-- logo: h‑5 on mobile, h‑6 on md+ -->
+                    <a href="index.html" class="order-2 md:order-1 flex items-center">
+                        <img src="assets/images/icons/xaround-text-logo.svg" alt="xaround" class="h-5 md:h-6" />
+                    </a>
+                </div>
+                <!-- Desktop menu -->
+                <ul id="nav-menu" class="hidden md:flex text-sm font-medium text-white">
+                    <li><a href="index.html"
+                            class="px-4 py-2 rounded-full transition-colors text-[rgb(160,160,160)] flex items-center">Home</a>
+                    </li>
+                    <li><a href="about.html"
+                            class="px-4 py-2 rounded-full transition-colors text-white bg-[rgb(28,28,28)] flex items-center">About</a>
+                    </li>
+                    <!-- Legal Dropdown -->
+                    <li class="relative dropdown-parent">
+                        <button
+                            class="px-4 py-2 rounded-full transition-colors text-[rgb(160,160,160)] flex items-center space-x-1 dropdown-trigger">
+                            <span>Legal</span>
+                            <svg class="w-4 h-4 transition-transform dropdown-arrow" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div
+                            class="dropdown-menu absolute top-full left-0 mt-2 w-max bg-black border-2 border-[rgb(28,28,28)] rounded-lg shadow-lg opacity-0 invisible transition-all duration-200 z-50">
+                            <a href="privacy-policy.html"
+                                class="flex items-center px-3 pb-2 pt-3 text-sm text-[rgb(160,160,160)] hover:text-white rounded-t-lg transition-colors group">
+                                <div
+                                    class="w-7 h-7 rounded bg-black border-2 border-[rgb(28,28,28)] group-hover:border group-hover:border-[rgb(200,200,200)] flex items-center justify-center mr-3 transition-colors">
+                                    <img src="assets/images/icons/backhand.svg" alt=""
+                                        class="h-4 w-4 opacity-60 group-hover:opacity-100" />
+                                </div>
+                                Privacy Policy
+                            </a>
+                            <a href="user-agreement.html"
+                                class="flex items-center px-3 pt-2 pb-3 text-sm text-[rgb(160,160,160)] hover:text-white rounded-b-lg transition-colors group">
+                                <div
+                                    class="w-7 h-7 rounded bg-black border-2 border-[rgb(28,28,28)] group-hover:border group-hover:border-[rgb(200,200,200)] flex items-center justify-center mr-3 transition-colors">
+                                    <img src="assets/images/icons/info.svg" alt=""
+                                        class="h-4 w-4 opacity-60 group-hover:opacity-100" />
+                                </div>
+                                User Agreement
+                            </a>
+                        </div>
+                    </li>
+                    <!-- Resources Dropdown -->
+                    <li class="relative dropdown-parent">
+                        <button
+                            class="px-4 py-2 rounded-full transition-colors text-[rgb(160,160,160)] flex items-center space-x-1 dropdown-trigger">
+                            <span>Resources</span>
+                            <svg class="w-4 h-4 transition-transform dropdown-arrow" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div
+                            class="dropdown-menu absolute top-full left-0 mt-2 w-max bg-black border-2 border-[rgb(28,28,28)] rounded-lg shadow-lg opacity-0 invisible transition-all duration-200 z-50">
+                            <a href="community-guidelines.html"
+                                class="flex items-center px-3 pb-2 pt-3 text-sm text-[rgb(160,160,160)] hover:text-white rounded-t-lg transition-colors group">
+                                <div
+                                    class="w-7 h-7 rounded bg-black border-2 border-[rgb(28,28,28)] group-hover:border group-hover:border-[rgb(200,200,200)] flex items-center justify-center mr-3 transition-colors">
+                                    <img src="assets/images/icons/article.svg" alt=""
+                                        class="h-4 w-4 opacity-60 group-hover:opacity-100" />
+                                </div>
+                                Community Guidelines
+                            </a>
+                            <a href="faqs.html"
+                                class="flex items-center px-3 pt-2 pb-3 text-sm text-[rgb(160,160,160)] hover:text-white rounded-b-lg transition-colors group">
+                                <div
+                                    class="w-7 h-7 rounded bg-black border-2 border-[rgb(28,28,28)] group-hover:border group-hover:border-[rgb(200,200,200)] flex items-center justify-center mr-3 transition-colors">
+                                    <img src="assets/images/icons/info.svg" alt=""
+                                        class="h-4 w-4 opacity-60 group-hover:opacity-100" />
+                                </div>
+                                Frequently Asked Questions
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <!-- Mobile menu (hidden by default, toggle with JS) -->
+            <ul id="mobile-menu" class="hidden md:hidden flex-col space-y-4 p-4 bg-gray-900 text-white">
+                <li><a href="index.html" class="hover:text-gray-300 block">Home</a></li>
+                <li><a href="about.html" class="hover:text-gray-300 block">About</a></li>
+                <!-- Legal Section -->
+                <li class="mobile-dropdown">
+                    <button
+                        class="mobile-dropdown-trigger hover:text-gray-300 block w-full text-left flex items-center justify-between">
+                        <span class="flex items-center">
+                            <img src="assets/images/icons/backhand.svg" alt="" class="h-4 w-4 mr-3" />
+                            Legal
+                        </span>
+                        <svg class="w-4 h-4 transition-transform mobile-dropdown-arrow" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
+                    </button>
+                    <ul class="mobile-dropdown-menu mt-2 ml-7 space-y-2 hidden">
+                        <li><a href="privacy-policy.html" class="hover:text-gray-300 block text-sm flex items-center">
+                                <img src="assets/images/icons/backhand.svg" alt="" class="h-3 w-3 mr-2" />
+                                Privacy Policy
+                            </a></li>
+                        <li><a href="user-agreement.html" class="hover:text-gray-300 block text-sm flex items-center">
+                                <img src="assets/images/icons/info.svg" alt="" class="h-3 w-3 mr-2" />
+                                User Agreement
+                            </a></li>
+                    </ul>
+                </li>
+                <!-- Resources Section -->
+                <li class="mobile-dropdown">
+                    <button
+                        class="mobile-dropdown-trigger hover:text-gray-300 block w-full text-left flex items-center justify-between">
+                        <span class="flex items-center">
+                            <img src="assets/images/icons/article.svg" alt="" class="h-4 w-4 mr-3" />
+                            Resources
+                        </span>
+                        <svg class="w-4 h-4 transition-transform mobile-dropdown-arrow" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
+                    </button>
+                    <ul class="mobile-dropdown-menu mt-2 ml-7 space-y-2 hidden">
+                        <li><a href="community-guidelines.html"
+                                class="hover:text-gray-300 block text-sm flex items-center">
+                                <img src="assets/images/icons/article.svg" alt="" class="h-3 w-3 mr-2" />
+                                Community Guidelines
+                            </a></li>
+                        <li><a href="faqs.html" class="hover:text-gray-300 block text-sm flex items-center">
+                                <img src="assets/images/icons/info.svg" alt="" class="h-3 w-3 mr-2" />
+                                Q&A
+                            </a></li>
+                    </ul>
+                </li>
+            </ul>
+        </header>
+    </div>
+    <!-- Sidebar + overlay -->
+    <div id="sidebar"
+        class="fixed inset-y-0 left-0 w-80 bg-black transform -translate-x-full transition-transform duration-300 ease-in-out z-40">
+        <ul class="mt-16 p-0 text-white">
+            <li><a href="index.html"
+                    class="flex items-center py-3 px-8 text-sm font-semibold rounded text-[rgb(160,160,160)] hover:text-white hover:bg-[rgb(28,28,28)] transition-colors group">
+                    <div
+                        class="w-7 h-7 rounded bg-black border-2 border-[rgb(28,28,28)] group-hover:border group-hover:border-[rgb(200,200,200)] flex items-center justify-center mr-3 transition-colors">
+                        <img src="assets/images/icons/home.svg" alt=""
+                            class="h-4 w-4 opacity-60 group-hover:opacity-100" />
+                    </div>
+                    Home
+                </a></li>
+            <li><a href="about.html"
+                    class="flex items-center py-3 px-8 text-sm font-semibold text-white bg-gradient-to-r from-[rgb(32,32,34)] to-[rgb(28,28,28)] transition-all duration-200 group relative">
+                    <div
+                        class="w-7 h-7 rounded bg-black border border-[rgb(200,200,200)] flex items-center justify-center mr-3 transition-colors">
+                        <img src="assets/images/icons/at.svg" alt="" class="h-4 w-4 opacity-100" />
+                    </div>
+                    About
+                    <div class="absolute right-2 w-1 h-1 bg-white rounded-full opacity-60"></div>
+                </a></li>
+            <li><a href="privacy-policy.html"
+                    class="flex items-center py-3 px-8 text-sm font-semibold rounded text-[rgb(160,160,160)] hover:text-white hover:bg-[rgb(28,28,28)] transition-colors group">
+                    <div
+                        class="w-7 h-7 rounded bg-black border-2 border-[rgb(28,28,28)] group-hover:border group-hover:border-[rgb(200,200,200)] flex items-center justify-center mr-3 transition-colors">
+                        <img src="assets/images/icons/backhand.svg" alt=""
+                            class="h-4 w-4 opacity-60 group-hover:opacity-100" />
+                    </div>Privacy Policy
+                </a></li>
+            <li><a href="user-agreement.html"
+                    class="flex items-center py-3 px-8 text-sm font-semibold rounded text-[rgb(160,160,160)] hover:text-white hover:bg-[rgb(28,28,28)] transition-colors group">
+                    <div
+                        class="w-7 h-7 rounded bg-black border-2 border-[rgb(28,28,28)] group-hover:border group-hover:border-[rgb(200,200,200)] flex items-center justify-center mr-3 transition-colors">
+                        <img src="assets/images/icons/info.svg" alt=""
+                            class="h-4 w-4 opacity-60 group-hover:opacity-100" />
+                    </div>User Agreement
+                </a></li>
+            <li><a href="community-guidelines.html"
+                    class="flex items-center py-3 px-8 text-sm font-semibold rounded text-[rgb(160,160,160)] hover:text-white hover:bg-[rgb(28,28,28)] transition-colors group">
+                    <div
+                        class="w-7 h-7 rounded bg-black border-2 border-[rgb(28,28,28)] group-hover:border group-hover:border-[rgb(200,200,200)] flex items-center justify-center mr-3 transition-colors">
+                        <img src="assets/images/icons/article.svg" alt=""
+                            class="h-4 w-4 opacity-60 group-hover:opacity-100" />
+                    </div>Community Guidelines
+                </a></li>
+            <li><a href="faqs.html"
+                    class="flex items-center py-3 px-8 text-sm font-semibold rounded text-[rgb(160,160,160)] hover:text-white hover:bg-[rgb(28,28,28)] transition-colors group">
+                    <div
+                        class="w-7 h-7 rounded bg-black border-2 border-[rgb(28,28,28)] group-hover:border group-hover:border-[rgb(200,200,200)] flex items-center justify-center mr-3 transition-colors">
+                        <img src="assets/images/icons/info.svg" alt=""
+                            class="h-4 w-4 opacity-60 group-hover:opacity-100" />
+                    </div>Frequently Asked Questions
+                </a></li>
+        </ul>
+    </div>
+
+    <div id="overlay"
+        class="fixed inset-0 bg-black bg-opacity-50 backdrop-blur-sm transition-opacity duration-300 ease-in-out opacity-0 pointer-events-none z-30">
+    </div>
+    <!-- Wrap all of your main page content in this container -->
+    <div id="main-content" class="mt-[64px]">
+        <main class="pt-16 pb-6">
+            <div class="container mx-auto max-w-6xl px-6">
+                <h2 class="text-4xl font-semibold mb-4 text-white">About</h2>
+                <hr class="border-[rgb(28,28,28)] mb-8 mt-8" />
+                <!-- About Content -->
+                <h3 class="text-xl font-semibold mb-2 text-white">Reimagining Campus Community Conversations</h3>
+                <p class="mb-6 leading-relaxed text-md text-[rgb(210,210,220)]">
+                    Campus communities deserve better than what many currently relies on: volunteer-run Facebook Pages
+                    or Telegram Channels coupled with Google Forms for anonymous submissions.
+                </p>
+                <h4 class="text-xl font-semibold mb-2 text-white">Current Reality</h4>
+                <ol class="list-decimal list-inside pl-4 mt-4 mb-8 space-y-2 text-md text-[rgb(210,210,220)]">
+                    <li><b>Continuity Crisis</b>: When volunteer administrators graduate or move on, entire community
+                        spaces often disappear, erasing valuable knowledge and breaking community bonds.</li>
+                    <li><b>Participation Barriers</b>: Without proper privacy controls for anonymous engagement, many
+                        community members hesitate to join important conversations or share valuable perspectives.</li>
+                    <li><b>Conversation Chaos</b>: Unstructured threads and limited organization tools make following
+                        and participating in anonymous discussions unnecessarily difficult.</li>
+                    <li><b>Frustrating Delays</b>: Manual review process for Google Forms submissions creates lengthy
+                        waits between questions and responses, stifling real-time community interaction.</li>
+                </ol>
+                <h4 class="text-xl font-semibold mb-2 text-white">Introducing xaround</h4>
+                <p class="leading-relaxed text-md text-[rgb(210,210,220)]">
+                    Built exclusively for campuses, xaround unites these fragmented experiences into a cohesive platform
+                    where communities thrive:
+                </p>
+                <ol class="list-decimal list-inside pl-4 mt-4 mb-8 space-y-2 text-md text-[rgb(210,210,220)]">
+                    <li><b>Institutional Memory</b>: Communities persist beyond individual administrators, preserving
+                        knowledge and maintaining continuity.</li>
+                    <li><b>Thoughtful Anonymity</b>: AI-powered moderation and merit-based reply system ensures quality
+                        conversations while protecting privacy when needed.</li>
+                    <li><b>Structured Engagement</b>: Intuitive threading and organization makes following discussions
+                        natural and engaging, whether anonymous or identified.</li>
+                    <li><b>Immediate Interaction</b>: Post instantly, with AI moderator working behind the scenes 24/7
+                        to maintain community standards.</li>
+                </ol>
+                <p class="leading-relaxed text-md text-[rgb(210,210,220)]">
+                    xaround exists because I genuinely believe campuses—universities and colleges—deserve better. This
+                    is my best attempt to create a platform that I wish had existed during my university years but
+                    wasn't possible pre-LLM.
+                </p>
+            </div>
+        </main>
+        <!-- Professional Footer -->
+        <footer class="bg-[rgb(0,0,0)] border-t border-[rgb(28,28,28)] mt-16">
+            <div class="container mx-auto max-w-6xl" style="margin-bottom: 3rem;">
+                <!-- Footer Content Grid -->
+                <div class="flex flex-col md:flex-row">
+                    <!-- Brand & Mission -->
+                    <div class="flex-shrink-0 flex flex-col justify-between"
+                        style="flex-basis: 50%; padding-top: 3rem; padding-left: 3rem; padding-right: 3rem;">
+                        <!-- Image + Description Group -->
+                        <div style="margin-bottom: 2rem;">
+                            <div class="flex items-center mb-4">
+                                <img src="assets/images/icons/xaround-text-logo.svg" alt="xaround" class="h-6" />
+                            </div>
+                            <p class="text-sm text-[rgb(160,160,160)] leading-relaxed">
+                                Our platform connects people to university campus communities—with verified students and
+                                alumni, anonymous posting, and AI moderation.
+                            </p>
+                        </div>
+                        <!-- Copyright -->
+                        <div class="flex flex-col items-start relative"
+                            style="border-top: 1px solid rgb(28,28,28); padding-top: 2rem; margin-right: -3rem; padding-right: 3rem;">
+                            <!-- White intersection marker -->
+                            <div
+                                style="position: absolute; top: -1px; right: -8px; width: 15px; height: 1px; background-color: rgb(200,200,200);">
+                            </div>
+                            <p class="text-sm text-[rgb(160,160,160)]">
+                                © 2025 xaround. All rights reserved.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Quick Links -->
+                    <div class="flex-shrink-0 relative"
+                        style="flex-basis: 25%; padding-left: 3rem; padding-top: 3rem; padding-right: 3rem; padding-bottom: 2rem; border-left: 1px solid rgb(28,28,28); border-right: 1px solid rgb(28,28,28);">
+                        <!-- White intersection marker on vertical border -->
+                        <div
+                            style="position: absolute; bottom: 45px; left: -1px; width: 1px; height: 15px; background-color: rgb(200,200,200);">
+                        </div>
+                        <h3 class="text-sm font-bold text-white mb-4 uppercase tracking-wider">Quick Links</h3>
+                        <ul class="space-y-2">
+                            <li><a href="index.html"
+                                    class="text-sm text-[rgb(160,160,160)] hover:text-white transition-colors">Home</a>
+                            </li>
+                            <li><a href="about.html" class="text-sm text-white">About</a></li>
+                            <li><a href="community-guidelines.html"
+                                    class="text-sm text-[rgb(160,160,160)] hover:text-white transition-colors">Community
+                                    Guidelines</a></li>
+                            <li><a href="faqs.html"
+                                    class="text-sm text-[rgb(160,160,160)] hover:text-white transition-colors">Frequently
+                                    Asked Questions</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Legal -->
+                    <div class="flex-shrink-0" style="flex-basis: 25%; padding-top: 3rem; padding-left: 3rem;">
+                        <h3 class="text-sm font-bold text-white mb-4 uppercase tracking-wider">Legal</h3>
+                        <ul class="space-y-2">
+                            <li><a href="privacy-policy.html"
+                                    class="text-sm text-[rgb(160,160,160)] hover:text-white transition-colors">Privacy
+                                    Policy</a></li>
+                            <li><a href="user-agreement.html"
+                                    class="text-sm text-[rgb(160,160,160)] hover:text-white transition-colors">User
+                                    Agreement</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
